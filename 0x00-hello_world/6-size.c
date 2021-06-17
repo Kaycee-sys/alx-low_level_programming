@@ -1,10 +1,10 @@
+#include <stdio.h>
 /**
  * main - Entry point
  * print various sizes
  *
  *Return: Always 0 (success)
  */
-#include<stdio.h>
 int main(void)
 {
 int ainteger;
