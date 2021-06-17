@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ -S -masm $CFILE
+gcc -S -masm $CFILE
