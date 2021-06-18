@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-char ch; letter
+char ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
-if (letter ! = 'e' && letter ! = 'q')
+if (ch ! = 'e' && ch ! = 'q')
 {
-putchar(letter);
+putchar(ch);
 }
 putchar('\n');
 return (0);
