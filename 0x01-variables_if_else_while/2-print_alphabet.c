@@ -7,8 +7,10 @@
 int main(void)
 {
 char ch;
-int 
 for (ch = 'a' ; ch <= 'z' ; ch++)
 putchar (ch);
+{
+putchar ("\n");
 return (0);
+}
 }
