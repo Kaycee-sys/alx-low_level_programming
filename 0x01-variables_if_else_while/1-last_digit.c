@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*Program to print the last digit of a number*/
+/**
+*main - Program to print the last digit of a number
+*
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
 int n;
