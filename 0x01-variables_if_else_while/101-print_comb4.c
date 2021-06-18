@@ -9,12 +9,13 @@ int main (void)
 int i;
 int n;
 int j;
-for (i =48; i< 58; i++)
+for (i =48; i < 58; i++)
 {
 for (n = 48; n < 58; n++)
+{
 if (n > 1)
 {
-for (j = 48; j< 58; j++)
+for (j = 48; j < 58; j++)
 {
 if (j > n)
 {
