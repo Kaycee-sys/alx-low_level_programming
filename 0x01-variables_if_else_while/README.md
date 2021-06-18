@@ -1,0 +1,1 @@
+This are solved tasks on if,else,while C programming
