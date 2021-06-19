@@ -8,18 +8,18 @@ int main(void)
 {
 int i;
 int j;
-for (i = 0; j < 100; i++)
+for (i = 0; i < 100; i++)
 {
 for (j = 0; j < 100; j++)
 {
 if (j > 1)
 {
 putchar(i / 10 + '0');
-putchar(i%10 + '0');
+putchar(i % 10 + '0');
 putchar(' ');
 putchar(j / 10 + '0');
-putchar(j%10 + '0');
-if (i*100 + j!= 9899)
+putchar(j % 10 + '0');
+if (i * 100 + j! = 9899)
 {
 putchar(',');
 putchar(' ');
