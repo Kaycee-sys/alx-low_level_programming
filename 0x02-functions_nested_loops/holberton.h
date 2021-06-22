@@ -1,4 +1,5 @@
 #define HOLBERTON_H
 
-/* _putchar.c */
+
 char _putchar(char c);
+void print_alphabet(void);
