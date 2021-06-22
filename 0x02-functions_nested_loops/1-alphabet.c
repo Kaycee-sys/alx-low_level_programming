@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - 'Program that prints alphabets'
+ * print_alphabet - 'Program that prints alphabets'
  * Return: Always 0 (Success)
  */
 void print_alphabet(void)
