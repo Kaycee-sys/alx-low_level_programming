@@ -1,1 +1,2 @@
-#define ch "Holberton"
+char ch;
+for (ch = 'Holberton')
