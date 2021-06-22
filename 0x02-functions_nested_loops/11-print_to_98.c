@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - Program that prints all natural numbers from n to 98
- * @n: An integer 
+ * @n: An integer
  *
  * Return: void
  */
