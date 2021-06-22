@@ -7,6 +7,7 @@
 */
 int main(void)
 {
-  putchar("Holberton");
+  char ch;
+  putchar(ch);
   return(0);
 }
