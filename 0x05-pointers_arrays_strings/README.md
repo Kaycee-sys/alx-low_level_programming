@@ -1,0 +1,1 @@
+These are solutions to ALX's tasks on pointers, arrays and strings in C programming 
