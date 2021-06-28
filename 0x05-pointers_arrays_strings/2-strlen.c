@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * -strlen - Returns the length of a string
+ * _strlen - Returns the length of a string
  * @s: String of unknkwn length
  *
  * Return: length of s
