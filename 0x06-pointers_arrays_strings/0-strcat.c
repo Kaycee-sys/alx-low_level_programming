@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -7,6 +8,7 @@
  *
  * Return : pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 int i = 0, j = 0;
