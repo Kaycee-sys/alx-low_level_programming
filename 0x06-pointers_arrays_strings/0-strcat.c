@@ -23,6 +23,7 @@ dest[i] = src[j];
 j++;
 i++;
 }
+ 
 dest[i] = '\0';
 return (dest);
 }
