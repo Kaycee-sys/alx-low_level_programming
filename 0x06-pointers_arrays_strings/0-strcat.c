@@ -4,7 +4,6 @@
  * _strcat -  Appends the src string to the dest string
  * @dest: string to be appended 
  * @src: string to append
- * @n: number of bytes to append
  *
  * Return : pointer to dest
  */
