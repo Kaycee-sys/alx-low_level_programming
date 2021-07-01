@@ -23,5 +23,5 @@ j++;
 }
 if (j < n)
 *(dest + i) = *(src + j);
-return (dest)
+return (dest);
 }
