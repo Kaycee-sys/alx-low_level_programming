@@ -5,7 +5,7 @@
  * @s2: pointer
  * Return: j-integer
  */
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 int i, j;
 j = 0;
