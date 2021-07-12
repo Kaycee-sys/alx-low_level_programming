@@ -1,35 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Prints the sum of the whole numbers passed to this program
  * @argc: The number of command-line arguments
  * @argv: The command-line arguments
  *
- * Return: 0 if successfull, otherwise 1
+ * Return: 0 if successful, otherwise 1
  */
 int main(int argc, char *argv[])
 {
-	int num, i, j;
-	int sum = 0;
+	int sum;
+	int count;
+	int i;
 
-	for (i = 1; i < argc; i++)
+	count = 1;
+	sum = 0;
+	if (argc == 1)
 	{
-		j = 0;
-		while (argv[i][j] != '\0')
+		printf("0\n");
+		return (0);
+	}
+	while (count < argc)
+	{
+		for (i = 0; argv[count][i] != '\0'; i++)
 		{
-			if (argv[i][j] >= '0' && argv[i][j] <= '9')
+			if (!(isdigit(argv[count][i])))
 			{
-				j++;
-			}
-			else
-			{
-				puts("Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
-		num = atoi(argv[i]);
-	        sum += num;
+		sum += atoi(argv[count]);
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
