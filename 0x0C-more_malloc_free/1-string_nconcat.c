@@ -1,52 +1,46 @@
 #include "holberton.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
- * string_nconcat - Concatenates two strings using at
- *                  most an inputted number of bytes.
- * @s1: The first string.
- * @s2: The second string.
- * @n: The maximum number of bytes of s2 to concatenate to s1.
+ * string_nconcat - concatenates two strings
+ * @s1: pointer to first string.
+ * @s2: pointer to 2nd string.
+ * @n: Number of bytes from n2 to concatenate.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - a pointer to the concatenated space in memory.
+ * Return:Pointer to space in memory containing concatenated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *ptr;
-	unsigned int s1_len, s2_len, size, k, i;
+	char *str;
+	unsigned int i, j, s1_length, s2_length;
 
-	s1_len = 0;
-	s2_len = 0;
-	k = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[s1_len] != '\0')
-		s1_len++;
-	while (s2[s2_len] != '\0')
-		s2_len++;
 
-	if (n >= s2_len)
-		n = s2_len;
 
-	size = s1_len + s2_len;
-	ptr = malloc(sizeof(char) * (size + 1));
-	if (ptr == NULL)
+	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
+		;
+
+	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++);
+
+	str = malloc(s1_length + n + 1);
+	if (str == NULL)
+	{
 		return (NULL);
-	for (i = 0; i < s1_len; i++)
-	{
-		ptr[k] = s1[i];
-		k++;
 	}
-	for (i = 0; i < n; i++)
-	{
-		ptr[k] = s2[i];
-		k++;
-	}
-	ptr[k] = '\0';
 
-	return (ptr);
+	for (i = 0; s1[i] != '\0'; i++)
+		str[i] = s1[i];
+
+	for (j = 0; j < n; j++)
+	{
+		str[i] = s2[j];
+		i++;
+	}
+
+	str[i] = '\0';
+	return (str);
 }
